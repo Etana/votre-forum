@@ -1,0 +1,12 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /s\.js
+  static_files: s.js
+  upload: s\.js
+
+- url: /.*
+  script: base.app
+
